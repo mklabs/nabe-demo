@@ -1,0 +1,10 @@
+<h2>Archives</h2>
+
+<ul>
+  {{each(index, article) articles}}
+    <li>
+      <a href="/article/${article.name}">${article.title}</a>
+    </li>
+  {{/each}}
+</ul>
+

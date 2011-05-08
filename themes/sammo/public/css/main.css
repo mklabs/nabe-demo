@@ -1,0 +1,503 @@
+/**
+ * samo theme for nabe, an adaptation to the well-known satorii theme
+ * for wordpress.
+ *
+ * Credit is left where credit is due. Much inspiration was taken from:
+ *
+ * THEME NAME: Satorii
+ * THEME URI: http://yukei.net
+ * DESCRIPTION: A minimalist theme with a strong focus on content
+ * VERSION: 1.1
+ * AUTHOR: <a href="http://www.yukei.net">Felipe Lavin</a>
+ * AUTHOR URI: http://www.yukei.net
+ * TAGS: one-column, white, light, microformats
+ */
+
+html {
+  background: #eeeedc;
+}
+
+body {
+	text-align: left;
+	color: #555;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#fff), to(#ECE9E9));
+  background: -moz-linear-gradient(top, #fff, #F0EDE2);
+	font-family: 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std',
+		'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande',
+		'Lucida Sans', sans-serif;
+}
+
+#container{width:960px; min-height:100%; height:auto !important; height:100%; margin:0 auto -80px; padding-left:10px; padding-right:10px; text-align:left}
+
+a,.entry-content a em,.entry-content a strong,.entry-content em a,.entry-content strong a {
+	color: #8A461B;
+	outline: none !important;
+}
+
+a:hover {
+	color: #f30;
+}
+
+ul li {
+	list-style-type: square;
+}
+
+.fw {
+	width: 100% !important;
+	float: none;
+}
+
+.skip-link {
+	display: none;
+}
+
+#header{width: 50%; margin:0 auto; padding-bottom:70px}
+
+h1.logo a{float:left; font-size:2.6em; font-family: 'BlackJackRegular'; font-weight:bold; color:#8A461B; text-decoration:none}
+#header h2 span{float:left; font-size:1.6em;}
+#nav{float:right; margin-top:1.2em}
+
+#nav ul{list-style-type:none; width:100%}
+
+#nav li{display:block; display:inline}
+
+#nav a:link, 
+#nav a:visited{padding:5px; display:block; color:#868F83; margin-right:20px; float:left; text-decoration:none; font-size:1.4em; font-weight:bold; text-transform:uppercase; text-shadow: #CCC 1px 1px 1px;
+     -moz-transition: all 0.3s ease-out;  
+       -o-transition: all 0.3s ease-out;  
+  -webkit-transition: all 0.3s ease-out;  
+      -ms-transition: all 0.3s ease-out;  
+          transition: all 0.3s ease-out;  
+}
+
+#nav a:hover{color:#A4AEBC;}
+
+ul#nav li.current_page_item a:link, 
+ul#nav li.current_page_item a:visited, 
+ul#nav li.current_page_item a:hover, 
+ul#nav li.current_page_item a:active{color:#fff; text-decoration:none; background:#000}
+
+#description {
+  text-align: center;
+  color: #868F83;
+  letter-spacing: 0.15em;
+  font-weight: normal;
+  font-family: 'BlackJackRegular';
+}
+
+.content-loading {
+    width: 32px;
+    height: 32px;
+    opacity: 0;
+    margin: auto;
+}
+
+.content-loading {
+  -moz-transition: all 1s ease-out;  
+     -o-transition: all 1s ease-out;  
+-webkit-transition: all 1s ease-out;  
+    -ms-transition: all 1s ease-out;  
+        transition: all 1s ease-out;
+}
+
+.active, .content-loading.active {
+  opacity: 1;
+}
+
+.disabled {
+  opacity: 0.3;
+}
+
+
+h2.entry-title,h2.page-title,h3.entry-title {
+	font-family: 'ITC Avant Garde Gothic Std', 'URW Gothic L',
+		'Century Gothic', 'Avant Garde', 'Trebuchet MS', sans-serif;
+}
+
+.post,#content .page {
+	clear: both;
+	margin: 1em auto 3em;
+	overflow: hidden;
+	width: 50em;
+}
+
+h2.entry-title,h3.entry-title {
+	margin-bottom: 0.5em;
+	color: #000;
+	font-size: 161%;
+	font-weight: normal;
+}
+
+h3.entry-title {
+	font-size: 138.5%;
+}
+
+h2.entry-title a,h3.entry-title a {
+	color: #000;
+	text-decoration: none;
+}
+
+h2.entry-title a:hover,h3.entry-title a:hover {
+	border-bottom: 2px solid #000;
+}
+
+h3.entry-title span {
+	font-size: 66.7%;
+}
+
+h2.page-title {
+	width: 80%;
+	color: #333;
+	margin: 0 auto;
+	font-weight: normal;
+}
+
+h2.page-title a {
+	color: #000;
+}
+
+body.attachment .entry-title {
+	margin-left: 3%;
+}
+
+body.attachment #header {
+	padding: 1em 3%;
+	width: 94%;
+}
+
+.entry-content {
+	width: 74%;
+	float: right;
+	line-height: 1.7;
+}
+
+#content .page .entry-content {
+	float: left;
+}
+
+.entry-meta,.page-meta {
+	width: 24%;
+	float: left;
+	margin: 0.38em 0 0;
+	font-size: 85%;
+}
+
+h3.page-links-title {
+	padding-left: 1em;
+}
+
+.entry-meta abbr {
+	border-bottom: none;
+}
+
+.entry-meta dt {
+	font-weight: bold;
+	color: #666;
+}
+
+.entry-meta,.entry-meta a {
+	color: #888;
+	text-decoration: none;
+}
+
+.entry-meta a:hover,.page-meta a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.entry-meta dd {
+	margin: 0 0 0.5em;
+}
+
+.entry-meta ul {
+	margin: 0;
+}
+
+.entry-meta li {
+	margin-left: 0;
+	color: #8A461B;
+}
+
+.entry-meta ul.post-revisions li{
+  margin-left: 0em;
+}
+
+table {
+	font-size: 93%;
+}
+
+caption {
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 0.10em;
+	font-weight: bold;
+}
+
+th,td {
+	border: none;
+}
+
+tr.odd {
+	border: 1px solid #EBE5D9;
+	border-width: 1px 0;
+	background: #F7F4EE;
+}
+
+th {
+	background: #f7f4ee;
+}
+
+tr.odd th {
+	background: #F3EEE4;
+}
+
+thead,thead th,tfoot,tfoot th,thead a,tfoot a {
+	background: #963 !important;
+	color: #fff !important;
+}
+
+.entry-content li {
+	margin-bottom: 0.5em;
+}
+
+.entry-content strong,.entry-content em {
+	color: #222;
+}
+
+.entry-content code {
+	color: #ce5c00;
+}
+
+#comments code {
+	color: #2e3436;
+}
+
+.entry-content kbd {
+	color: #8f5902;
+}
+
+.entry-content h3,.entry-content h4,.entry-content h5,.entry-content h6
+	{
+	color: #222;
+}
+
+pre {
+	overflow: auto;
+	border: 1px solid #f5f5f5;
+	background: #FDFDFD;
+	padding: 1.5%;
+	width: 96%;
+	margin: auto;
+}
+
+.entry-content blockquote {
+	border-left: 0.5em solid #EEEEDC;
+	padding-left: 1em;
+}
+
+#sidebar-wrapper {
+	padding-top: 2em;
+	border-top: 2px solid #F0EED4;
+	font-size: 93%;
+	line-height: 1.5;
+}
+
+#sidebar-wrapper h3,#sidebar-wrapper h3 a {
+	color: #330;
+	text-decoration: none;
+}
+
+#sidebar-wrapper a,#comments a:hover {
+	color: #663300
+}
+
+#sidebar-wrapper a:hover {
+	color: #660;
+}
+
+#footer {
+	padding: 2em;
+	font-size: 85%;
+	
+  width: 100%;
+  border-top: 4px solid #DBDACF;
+  text-align: center;
+  padding: 10px 0px;
+  margin-top: 20px;
+}
+
+#sidebar-wrapper,#footer,#comments {
+	clear: both;
+	background: #eeeedc;
+}
+
+#footer p {
+	margin: 0.25em 0;
+}
+
+#footer a {
+	color: #636257;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.5.2
+*/
+h1 {
+	font-size: 138.5%;
+}
+
+h2 {
+	font-size: 123.1%;
+}
+
+h3 {
+	font-size: 108%;
+}
+
+h1,h2,h3 {
+	margin: 1em 0;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+	font-weight: bold;
+}
+
+abbr,acronym {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+em {
+	font-style: italic;
+}
+
+blockquote,ul,ol,dl {
+	margin: 1em;
+}
+
+ol,ul,dl {
+	margin-left: 2em;
+}
+
+ol li {
+	list-style: decimal outside;
+}
+
+ul li {
+	list-style: disc outside;
+}
+
+dl dd {
+	margin-left: 1em;
+}
+
+th,td {
+	border: 1px solid #000;
+	padding: .5em;
+}
+
+th {
+	font-weight: bold;
+	text-align: center;
+}
+
+caption {
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+p,fieldset,table,pre {
+	margin-bottom: 1em;
+}
+
+input[type=text],input[type=password],textarea {
+	width: 12.25em;
+	width: 11.9em;
+}
+
+/* gh wikistyle */
+body hr{border:1px solid #ddd;}
+body p{margin:1em 0!important;line-height:1.5em!important;}
+body a.absent{color:#a00;}
+body ul,#wiki-form .content-body ul{margin:1em 0 1em 2em!important;}
+body ol,#wiki-form .content-body ol{margin:1em 0 1em 2em!important;}
+body ul li,#wiki-form .content-body ul li,body ol li,#wiki-form .content-body ol li{margin-top:.5em;margin-bottom:.5em;}
+body ul ul,body ul ol,body ol ol,body ol ul{margin-top:0!important;margin-bottom:0!important;}
+body blockquote{margin:1em 0!important;border-left:5px solid #ddd!important;padding-left:.6em!important;color:#555!important;}
+body dt{font-weight:bold!important;margin-left:1em!important;}
+body dd{margin-left:2em!important;margin-bottom:1em!important;}
+body table{margin:1em 0!important;}
+body table th{border-bottom:1px solid #bbb!important;padding:.2em 1em!important;}
+body table td{border-bottom:1px solid #ddd!important;padding:.2em 1em!important;}
+body pre{margin:1em 0;font-size:12px;background-color:#eee;border:1px solid #ddd;padding:5px;line-height:1.5em;color:#444;overflow:auto;-webkit-box-shadow:rgba(0,0,0,0.07) 0 1px 2px inset;-webkit-border-radius:3px;-moz-border-radius:3px;border-radius:3px;}
+body pre::-webkit-scrollbar{height:8px;width:8px;}
+body pre::-webkit-scrollbar-track-piece{margin-bottom:10px;background-color:#e5e5e5;border-bottom-left-radius:4px 4px;border-bottom-right-radius:4px 4px;border-top-left-radius:4px 4px;border-top-right-radius:4px 4px;}
+body pre::-webkit-scrollbar-thumb:vertical{height:25px;background-color:#ccc;-webkit-border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(255,255,255,1);}
+body pre::-webkit-scrollbar-thumb:horizontal{width:25px;background-color:#ccc;-webkit-border-radius:4px;}
+body pre code{padding:0!important;font-size:12px!important;background-color:#eee!important;border:none!important;}
+body code{font-size:12px!important;background-color:#f8f8ff!important;color:#444!important;padding:0 .2em!important;border:1px solid #dedede!important;}
+body a code,body a:link code,body a:visited code{color:#4183c4!important;}
+body img{max-width:100%;}
+body pre.console{margin:1em 0!important;font-size:12px!important;background-color:black!important;padding:.5em!important;line-height:1.5em!important;color:white!important;}
+body pre.console code{padding:0!important;font-size:12px!important;background-color:black!important;border:none!important;color:white!important;}
+body pre.console span{color:#888!important;}
+body pre.console span.command{color:yellow!important;}
+
+
+/* code */
+.pln { color: #000 }  /* plain text */
+
+@media screen {
+  .str { color: #080 }  /* string content */
+  .kwd { color: #008 }  /* a keyword */
+  .com { color: #800 }  /* a comment */
+  .typ { color: #606 }  /* a type name */
+  .lit { color: #066 }  /* a literal value */
+  /* punctuation, lisp open bracket, lisp close bracket */
+  .pun, .opn, .clo { color: #660 }
+  .tag { color: #008 }  /* a markup tag name */
+  .atn { color: #606 }  /* a markup attribute name */
+  .atv { color: #080 }  /* a markup attribute value */
+  .dec, .var { color: #606 }  /* a declaration; a variable name */
+  .fun { color: red }  /* a function name */
+}
+
+/* Use higher contrast and text-weight for printable form. */
+@media print, projection {
+  .str { color: #060 }
+  .kwd { color: #006; font-weight: bold }
+  .com { color: #600; font-style: italic }
+  .typ { color: #404; font-weight: bold }
+  .lit { color: #044 }
+  .pun, .opn, .clo { color: #440 }
+  .tag { color: #006; font-weight: bold }
+  .atn { color: #404 }
+  .atv { color: #060 }
+}
+
+/* Put a border around prettyprinted code snippets. */
+pre.prettyprint { padding: 2px; border: 1px solid #888 }
+
+
+
+/** yabe changes **/
+.page .entry-content {width: 100%;}
+
+@font-face {
+    font-family: 'BlackJackRegular';
+    src: url('../assets/black_jack-webfont.eot');
+    src: url('../assets/black_jack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../assets/black_jack-webfont.woff') format('woff'),
+         url('../assets/black_jack-webfont.ttf') format('truetype'),
+         url('../assets/black_jack-webfont.svg#BlackJackRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

@@ -1,0 +1,25 @@
+{{each(index, article) articles}}
+  <div class="post">
+    <h2 class="entry-title"><a href="/article/${article.name}">${article.title}</a></h2>
+    <div class="entry-content">
+      {{html article.markdown}}      
+    </div>
+    <dl class="entry-meta">
+      <dt>Date Released:</dt>
+      <dd class="entry_date"><abbr class="published" title="${article.date}">${article.date}</abbr></dd>
+      
+      <dt>Author:</dt>
+      <dd class="author vcard">${article.author}</dd>
+      
+      <dt>Categories:</dt>
+      <dd class="cat-links">
+        <ul class="post-categories">
+        {{each(index, category) article.categories}}
+          <li><a href="/tag/${category}">${category}</a></li>
+        {{/each}}
+        </ul>
+      </dd>
+    </dl>
+  </div>
+{{/each}}
+

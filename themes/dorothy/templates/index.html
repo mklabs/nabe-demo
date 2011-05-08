@@ -1,0 +1,19 @@
+<section id="articles">
+  {{each(index, article) articles}}
+    <article class="post">
+      <header>
+        <h1><a href="/article/${article.name}">${article.title}</a></h1>
+        <span class="date">${article.date}</span>
+      </header>
+
+      <section class="content">
+        {{html article.markdown}}
+      </section>
+      <div class="more"><a href="/article/${article.name}">Read more...</a></div>
+    </article>
+  {{/each}}
+</section>
+
+<section id="archives">
+  todo: Archives would go here
+</section>

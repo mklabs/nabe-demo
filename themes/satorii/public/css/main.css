@@ -1,0 +1,440 @@
+/**
+ * satorii theme for nabe, an adaptation to the well-known satorii theme
+ * for wordpress.
+ *
+ * Credit is left where credit is due. Much inspiration was taken from:
+ *
+ * THEME NAME: Satorii
+ * THEME URI: http://yukei.net
+ * DESCRIPTION: A minimalist theme with a strong focus on content
+ * VERSION: 1.1
+ * AUTHOR: <a href="http://www.yukei.net">Felipe Lavin</a>
+ * AUTHOR URI: http://www.yukei.net
+ * TAGS: one-column, white, light, microformats
+ */
+
+body {
+	text-align: left;
+	color: #555;
+	font-family: 'Liberation Sans', FreeSans, 'Helvetica Neue LT Std',
+		'Helvetica LT Std', Helvetica, Arial, Tahoma, 'Lucida Grande',
+		'Lucida Sans', sans-serif;
+}
+
+a,.entry-content a em,.entry-content a strong,.entry-content em a,.entry-content strong a
+	{
+	color: #06c;
+	outline: none !important;
+}
+
+a:hover {
+	color: #f30;
+}
+
+ul li {
+	list-style-type: square;
+}
+
+.fw {
+	width: 100% !important;
+	float: none;
+}
+
+.skip-link {
+	display: none;
+}
+
+#header,#access {
+	width: 80%;
+	padding: 1em 10%;
+}
+
+h2.entry-title,#blog-title a,h2.page-title,h3.entry-title {
+	font-family: 'ITC Avant Garde Gothic Std', 'URW Gothic L',
+		'Century Gothic', 'Avant Garde', 'Trebuchet MS', sans-serif;
+}
+
+#blog-title {
+	margin-bottom: 0.35em;
+}
+
+#blog-title a {
+	color: #000;
+	font-weight: normal;
+	text-decoration: none;
+	font-size: 197%;
+}
+
+#blog-description {
+	font-size: 77%;
+	color: #868F83;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+}
+
+#access {
+	text-align: center;
+}
+
+#menu ul {
+	overflow: hidden;
+	text-align: center;
+}
+
+#menu li {
+	display: inline;
+	padding: 1em 2em;
+	border-left: 1px solid #BBC1BC;
+	line-height: 2.2;
+}
+
+#menu li:first-child {
+	border-left: none;
+}
+
+#menu li a {
+	color: #868F83;
+	text-decoration: none;
+	font-size: 138.5%;
+}
+
+#menu li a:hover {
+	color: #555;
+}
+
+.post,#content .page {
+	clear: both;
+	margin: 1em auto 3em;
+	overflow: hidden;
+	width: 50em;
+}
+
+h2.entry-title,h3.entry-title {
+	margin-bottom: 0.5em;
+	color: #000;
+	font-size: 161%;
+	font-weight: normal;
+}
+
+h3.entry-title {
+	font-size: 138.5%;
+}
+
+h2.entry-title a,h3.entry-title a {
+	color: #000;
+	text-decoration: none;
+}
+
+h2.entry-title a:hover,h3.entry-title a:hover {
+	border-bottom: 2px solid #000;
+}
+
+h3.entry-title span {
+	font-size: 66.7%;
+}
+
+h2.page-title {
+	width: 80%;
+	color: #333;
+	margin: 0 auto;
+	font-weight: normal;
+}
+
+h2.page-title a {
+	color: #000;
+}
+
+body.attachment .entry-title {
+	margin-left: 3%;
+}
+
+body.attachment #header {
+	padding: 1em 3%;
+	width: 94%;
+}
+
+.entry-content {
+	width: 74%;
+	float: right;
+	line-height: 1.7;
+}
+
+#content .page .entry-content {
+	float: left;
+}
+
+.entry-meta,.page-meta {
+	width: 24%;
+	float: left;
+	margin: 0.38em 0 0;
+	font-size: 85%;
+}
+
+h3.page-links-title {
+	padding-left: 1em;
+}
+
+.page-meta {
+	float: right;
+	background: #f9f9f9;
+	border: 1px solid #f0f0f0;
+}
+
+.page-meta li {
+	margin: 0.25em;
+}
+
+.page-meta li ul {
+	margin: 0 0 0 1em;
+}
+
+.page-meta li {
+	color: #c90;
+}
+
+.page-meta li ul li {
+	color: #999;
+}
+
+.page-meta a {
+	color: #666;
+	text-decoration: none;
+}
+
+.page-meta li.current_page_item a {
+	color: #000;
+}
+
+.entry-meta abbr {
+	border-bottom: none;
+}
+
+.entry-meta dt {
+	font-weight: bold;
+	color: #666;
+}
+
+.entry-meta,.entry-meta a {
+	color: #888;
+	text-decoration: none;
+}
+
+.entry-meta a:hover,.page-meta a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+
+.entry-meta dd {
+	margin: 0 0 1em;
+}
+
+.entry-meta ul {
+	margin: 0;
+}
+
+.entry-meta li {
+	margin-left: 1.5em;
+	color: #C90;
+}
+
+table {
+	font-size: 93%;
+}
+
+caption {
+	text-transform: uppercase;
+	text-align: left;
+	letter-spacing: 0.10em;
+	font-weight: bold;
+}
+
+th,td {
+	border: none;
+}
+
+tr.odd {
+	border: 1px solid #EBE5D9;
+	border-width: 1px 0;
+	background: #F7F4EE;
+}
+
+th {
+	background: #f7f4ee;
+}
+
+tr.odd th {
+	background: #F3EEE4;
+}
+
+thead,thead th,tfoot,tfoot th,thead a,tfoot a {
+	background: #963 !important;
+	color: #fff !important;
+}
+
+.entry-content li {
+	margin-bottom: 0.5em;
+}
+
+.entry-content strong,.entry-content em {
+	color: #222;
+}
+
+.entry-content code {
+	color: #ce5c00;
+}
+
+#comments code {
+	color: #2e3436;
+}
+
+.entry-content kbd {
+	color: #8f5902;
+}
+
+.entry-content h3,.entry-content h4,.entry-content h5,.entry-content h6
+	{
+	color: #222;
+}
+
+pre {
+	overflow: auto;
+	border: 1px solid #f5f5f5;
+	background: #FDFDFD;
+	padding: 1.5%;
+	width: 96%;
+	margin: auto;
+}
+
+.entry-content blockquote {
+	border-left: 0.5em solid #EEEEDC;
+	padding-left: 1em;
+}
+
+#sidebar-wrapper,#footer,#comments {
+	clear: both;
+	background: #eeeedc;
+}
+
+#sidebar-wrapper {
+	padding-top: 2em;
+	border-top: 2px solid #F0EED4;
+	font-size: 93%;
+	line-height: 1.5;
+}
+
+#sidebar-wrapper h3,#sidebar-wrapper h3 a {
+	color: #330;
+	text-decoration: none;
+}
+
+#sidebar-wrapper a,#comments a:hover {
+	color: #663300
+}
+
+#sidebar-wrapper a:hover {
+	color: #660;
+}
+
+#footer {
+	clear: both;
+	padding: 2em;
+	color: #979584;
+	font-size: 85%;
+	text-align: right;
+}
+
+#footer p {
+	margin: 0.25em 0;
+}
+
+#footer a {
+	color: #636257;
+	text-decoration: none;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}
+
+/*
+Copyright (c) 2008, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+version: 2.5.2
+*/
+h1 {
+	font-size: 138.5%;
+}
+
+h2 {
+	font-size: 123.1%;
+}
+
+h3 {
+	font-size: 108%;
+}
+
+h1,h2,h3 {
+	margin: 1em 0;
+}
+
+h1,h2,h3,h4,h5,h6,strong {
+	font-weight: bold;
+}
+
+abbr,acronym {
+	border-bottom: 1px dotted #000;
+	cursor: help;
+}
+
+em {
+	font-style: italic;
+}
+
+blockquote,ul,ol,dl {
+	margin: 1em;
+}
+
+ol,ul,dl {
+	margin-left: 2em;
+}
+
+ol li {
+	list-style: decimal outside;
+}
+
+ul li {
+	list-style: disc outside;
+}
+
+dl dd {
+	margin-left: 1em;
+}
+
+th,td {
+	border: 1px solid #000;
+	padding: .5em;
+}
+
+th {
+	font-weight: bold;
+	text-align: center;
+}
+
+caption {
+	margin-bottom: .5em;
+	text-align: center;
+}
+
+p,fieldset,table,pre {
+	margin-bottom: 1em;
+}
+
+input[type=text],input[type=password],textarea {
+	width: 12.25em; *
+	width: 11.9em;
+}
+
+
+/** yabe changes **/
+.page .entry-content {width: 100%;}
