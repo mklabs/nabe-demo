@@ -43,9 +43,11 @@
   
   // Load scripts.
   require(['jquery', 'jquery.tmpl', 'sammy',
-  'text!app/views/index.html', 'text!app/views/article.html', 'text!app/views/page.html'], 
+  'text!app/views/index.html', 'text!app/views/post.html', 'text!app/views/page.html', 'text!app/views/archives.html'], 
   
-  function($, tmpl, Sammy, index, article, page) {
+  function($, tmpl, Sammy, index, post, page, archives) {
+    
+    console.log(arguments);
     
     var content, loading, first = true,
     
@@ -85,10 +87,10 @@
         );  
       },
       
-      article: function(ctx, splat, response) {
-        console.log('article: ', ctx, response);
+      post: function(ctx, splat, response) {
+        console.log('post: ', ctx, response);
         content.html(
-            $.tmpl('tmpl.article', response).appendTo($('<div />'))
+            $.tmpl('tmpl.post', response).appendTo($('<div />'))
         );
       },
       
@@ -97,22 +99,32 @@
         content.html(
             $.tmpl('tmpl.page', response).appendTo($('<div />'))
         );
+      },
+      
+      archives: function(ctx, splat, response) {
+        console.log('archives: ', ctx, response);
+        content.html(
+            $.tmpl('tmpl.archives', response).appendTo($('<div />'))
+        );
       }
     };
     
     // compile them for later
     $.template('tmpl.index', index);
-    $.template('tmpl.article', article);
+    $.template('tmpl.post', post);
     $.template('tmpl.page', page);
+    $.template('tmpl.archives', archives);
     
     var app = Sammy('body', function(context) {
 
       // Set up routes
       this.get('/', delegator('index'));
-      this.get(/\/article\/([^\s]+)/, delegator('article'));
-      this.get(/\/[a-f0-9]{40}\/(.+)\/?/, delegator('article'));
+      this.get(/\/article\/([^\s]+)/, delegator('post'));
+      this.get(/\/[a-f0-9]{40}\/(.+)\/?/, delegator('post'));
       this.get(/\/tag\/([^\s]+)/, delegator('index'));
       this.get(/\/category\/([^\s]+)/, delegator('index'));
+      this.get('/archives', delegator('archives'));
+      
       this.get('/:page', delegator('page'));
 
     });

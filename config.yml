@@ -20,7 +20,7 @@ author:       John Doe
 title:        nabe
 description:  'not another blog engine.. well.. yes it is..'
 format:       F
-culture:      'de'
+culture:      en
 theme:        sammo
 disqus:       ''
 ext:          markdown
