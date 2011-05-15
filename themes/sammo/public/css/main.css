@@ -532,6 +532,41 @@ body pre.console span.command{color:yellow!important;}
 }
 
 
+/** 404 **/
+body #content div.nf {width: 30em; color: #777; }
+body .nf p.frown {text-align: center;}
+body .nf p.frown span { 
+  font-size: 50px;
+  display:inline-block; color: #bbb; 
+     -moz-transform: rotate(90deg);  
+       -o-transform: rotate(90deg);  
+  -webkit-transform: rotate(90deg);  
+      -ms-transform: rotate(90deg);  
+          transform: rotate(90deg);  
+             filter: progid:DXImageTransform.Microsoft.Matrix( 
+                     M11=6.123031769111886e-17, M12=-1, M21=1, M22=6.123031769111886e-17, sizingMethod='auto expand');
+               zoom: 1;
+}
+
+body .nf a { color: rgb(36, 109, 56); text-decoration:none; }
+body .nf a:hover { color: rgb(96, 73, 141) ; text-shadow: 2px 2px 2px rgba(36, 109, 56, 0.5); }
+
+body .nf form {float: none;}
+body .nf form input { width: 60%; 
+
+     -moz-transition: all 0.3s ease-out;  
+       -o-transition: all 0.3s ease-out;  
+  -webkit-transition: all 0.3s ease-out;  
+      -ms-transition: all 0.3s ease-out;  
+          transition: all 0.3s ease-out;  
+  
+}
+
+body .nf form input:focus {
+  width: 100%;
+}
+
+
 /* code */
 .pln { color: #000 }  /* plain text */
 
