@@ -1,6 +1,6 @@
 Title: Markdown loves you
 Author: John Doe
-Date: Apr 06 2011 21:14:00 GMT-0500 (CDT)
+Date: Apr 06 2009 21:14:00 GMT-0500 (CDT)
 Categories: markdown
 
 ***This document is coming directly from [Markdown website](http://daringfireball.net/projects/markdown/syntax.text) and provided as is.***
@@ -91,18 +91,18 @@ span-level tags.
 In HTML, there are two characters that demand special treatment: `<`
 and `&`. Left angle brackets are used to start tags; ampersands are
 used to denote HTML entities. If you want to use them as literal
-characters, you must escape them as entities, e.g. `&lt;`, and
-`&amp;`.
+characters, you must escape them as entities, e.g. `<`, and
+`&`.
  
 Ampersands in particular are bedeviling for web writers. If you want to
-write about 'AT&T', you need to write '`AT&amp;T`'. You even need to
+write about 'AT&T', you need to write '`AT&T`'. You even need to
 escape ampersands within URLs. Thus, if you want to link to:
  
     http://images.google.com/images?num=30&q=larry+bird
  
 you need to encode the URL as:
  
-    http://images.google.com/images?num=30&amp;q=larry+bird
+    http://images.google.com/images?num=30&q=larry+bird
  
 in your anchor tag `href` attribute. Needless to say, this is easy to
 forget, and is probably the single most common source of HTML validation
@@ -111,11 +111,11 @@ errors in otherwise well-marked-up web sites.
 Markdown allows you to use these characters naturally, taking care of
 all the necessary escaping for you. If you use an ampersand as part of
 an HTML entity, it remains unchanged; otherwise it will be translated
-into `&amp;`.
+into `&`.
  
 So, if you want to include a copyright symbol in your article, you can write:
  
-    &copy;
+    ©
  
 and Markdown will leave it alone. But if you write:
  
@@ -123,7 +123,7 @@ and Markdown will leave it alone. But if you write:
  
 Markdown will translate it to:
  
-    AT&amp;T
+    AT&T
  
 Similarly, because Markdown supports [inline HTML](#html), if you use
 angle brackets as delimiters for HTML tags, Markdown will treat them as
@@ -133,7 +133,7 @@ such. But if you write:
  
 Markdown will translate it to:
  
-    4 &lt; 5
+    4 < 5
  
 However, inside Markdown code spans and blocks, angle brackets and
 ampersands are *always* encoded automatically. This makes it easy to use
@@ -470,14 +470,14 @@ it and indent it, and Markdown will handle the hassle of encoding the
 ampersands and angle brackets. For example, this:
  
         <div class="footer"> 
-            &copy; 2004 Foo Corporation
+            © 2004 Foo Corporation
         </div> 
  
 will turn into:
  
-    <pre><code>&lt;div class="footer"&gt;
-        &amp;copy; 2004 Foo Corporation
-    &lt;/div&gt;
+    <pre><code><div class="footer">
+        &copy; 2004 Foo Corporation
+    </div>
     </code></pre> 
  
 Regular Markdown syntax is not processed within code blocks. E.g.,
@@ -749,16 +749,16 @@ tags. Markdown will turn this:
  
 into:
  
-    <p>Please don't use any <code>&lt;blink&gt;</code> tags.</p> 
+    <p>Please don't use any <code><blink></code> tags.</p> 
  
 You can write this:
  
-    `&#8212;` is the decimal-encoded equivalent of `&mdash;`.
+    `&#8212;` is the decimal-encoded equivalent of `—`.
  
 to produce:
  
-    <p><code>&amp;#8212;</code> is the decimal-encoded
-    equivalent of <code>&amp;mdash;</code>.</p> 
+    <p><code>&#8212;</code> is the decimal-encoded
+    equivalent of <code>&mdash;</code>.</p> 
  
  
  
