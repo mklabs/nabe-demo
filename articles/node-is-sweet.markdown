@@ -1,6 +1,6 @@
 Title: Node is sweet
 Author: John Doe
-Date: Apr 07 2011 21:14:00 GMT-0500 (CDT)
+Date: Apr 07 2010 21:14:00 GMT-0500 (CDT)
 Categories: node, sweet
 
 [Wheat](https://github.com/creationix/wheat) is really sweet. It's a blog engine written with node that makes blogging really handy. It uses git filesystem to get info from a local repo and markdown syntax to default post syntax. Markdown is really an efficient markup language and makes documentation actually fun, the same goes for writings.
