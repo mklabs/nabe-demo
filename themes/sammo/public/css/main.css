@@ -506,7 +506,7 @@ body pre.console span.command{color:yellow!important;}
   color: #E3D7BF;
 }
 
-.nabe-search-results ul li a {
+.nabe-search-results a {
   text-decoration: none;
   color: #444;
   display: inline-block;
@@ -519,7 +519,7 @@ body pre.console span.command{color:yellow!important;}
 
 }
 
-.nabe-search-results ul li a:hover {
+.nabe-search-results a:hover {
   color: #8A461B;
 }
 
@@ -529,6 +529,22 @@ body pre.console span.command{color:yellow!important;}
 
 .nabe-search-results .date {
   color: #bbb;
+}
+
+.nabe-search-results .years {
+  text-align: center;
+}
+
+.nabe-search-results .years a {
+  color: #bbb;
+}
+
+.nabe-search-results .years a:hover {
+    color: #000;
+     -moz-transform: scale(1.1);
+       -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
 }
 
 

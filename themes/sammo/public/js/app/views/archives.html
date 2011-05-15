@@ -1,6 +1,12 @@
 <div class="page nabe-search-results">
   <h2>${term}</h2>
   
+  <p class="years">
+    {{each(i, year) years}}
+      <a href="/archives/${year}">${year}</a>
+    {{/each}}
+  </p>
+  
   <ul>
   {{each(index, article) articles}}
     <li>

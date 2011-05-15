@@ -47,8 +47,6 @@
   
   function($, tmpl, Sammy, index, post, page, archives) {
     
-    console.log(arguments);
-    
     var content, loading, first = true,
     
     delegator = function(target) {
@@ -123,6 +121,8 @@
       this.get(/\/[a-f0-9]{40}\/(.+)\/?/, delegator('post'));
       this.get(/\/tag\/([^\s]+)/, delegator('index'));
       this.get(/\/category\/([^\s]+)/, delegator('index'));
+      this.get('/archives/:year/:month', delegator('archives'));
+      this.get('/archives/:year', delegator('archives'));
       this.get('/archives', delegator('archives'));
       
       this.get('/:page', delegator('page'));
