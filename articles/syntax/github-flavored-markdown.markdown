@@ -3,9 +3,6 @@ Author: John Doe
 Date: Apr 24 2011 17:08:00 GMT+0200 (CDT)
 Categories: markdown, github
 
-GitHub Flavored Markdown
-================================
-
 *View the [source of this content](http://github.github.com/github-flavored-markdown/sample_content.html).*
 
 Let's get the whole "linebreak" thing out of the way. The next paragraph contains two phrases separated by a single newline character:
