@@ -632,3 +632,87 @@ pre.prettyprint { padding: 2px; border: 1px solid #888 }
     font-weight: normal;
     font-style: normal;
 }
+
+
+form input {
+		
+   -moz-transition: all 0.7s ease-out;  
+     -o-transition: all 0.7s ease-out;  
+-webkit-transition: all 0.7s ease-out;  
+    -ms-transition: all 0.7s ease-out;  
+        transition: all 0.7s ease-out;
+}
+
+/* smaller than 980 */
+@media screen and (max-width: 980px) {
+
+	/* pagewrap */
+	#header, #content {
+		width: 95%;
+	}
+
+	/* content */
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#content .post, #content .page {
+	  width: 90%;
+	  margin: auto;
+	}
+}
+
+/* smaller than 650 */
+@media screen and (max-width: 650px) {
+
+	/* header */
+	#header {
+    text-align: center;
+	}
+	
+	#header h1.logo a {
+	  display: none;
+	}
+	
+	#header ul {
+	  float: none;
+	}
+	
+	#header form {
+    width: 75%;
+    margin: auto;
+    float: none;
+  }
+	
+	#header form input {
+	  width: 100%;
+	  margin-top: 1em;
+	}
+	
+
+	/* content */
+	#content .entry-meta {
+	  display: none;
+	}
+	
+  #content div.entry-content {
+	  float: none;
+	  width: 100%;
+	}
+	
+	#content .nabe-search-results li {
+	  padding-bottom: 2em;
+	}
+}
+
+/* smaller than 480 */
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+}
+

@@ -19,9 +19,9 @@
 author:       John Doe
 title:        nabe
 description:  'not another blog engine.. well.. yes it is..'
-format:       F
-culture:      en
-theme:        sammo
+format:       f
+culture:      fr
+theme:        default
 disqus:       ''
 ext:          markdown
 summary:
